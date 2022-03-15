@@ -7,7 +7,7 @@
     tools:context=".ui.quotes.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_quote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="The quote will appear here"
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="54dp"
         android:hint="Quote"
-        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintTop_toBottomOf="@id/textView_quote"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:drawableStart="@drawable/ic_baseline_message_24"
@@ -43,6 +43,7 @@
         android:drawablePadding="8dp"/>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/author_name"
